@@ -1,0 +1,47 @@
+import java.util.Scanner;
+/**
+ * @author Eiza
+ */
+public class BMI {
+public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String ulang = "";
+        
+        System.out.println("PROGRAM MENGHITUNG BMI");
+        System.out.println("");
+        
+        System.out.print("Input berat badan dalam kilogram: ");
+        double bb = in.nextDouble();
+        System.out.print("Input tinggi badan dalam meter : ");
+      double tb = in.nextDouble();
+        double BMI = bb / (tb * tb);
+        System.out.println("Body Mass Index (BMI) adalah : " + BMI + " kg / m2 ");
+        System.out.println("");
+        
+        
+        do {
+        
+        if (BMI<18.5) {
+            System.out.println("Berat badan anda di bawah normal.");
+        }
+        else if (BMI<23) {
+            System.out.println("Berat badan anda normal.");
+        }
+        else if (BMI<25) {
+            System.out.println("Berat badan anda berlebih.");
+        } 
+        else if (BMI>25) {
+            System.out.println("Berat badan anda memasukki obesitas.");
+        } else {
+            System.out.println("Tidak terdeteksi");
+        }
+            System.out.println("");
+            System.out.println("Apakah ingin mengulang?");
+            ulang = in.next();
+        } while (ulang.equalsIgnoreCase("ya"));
+        
+        
+        
+        }
+    
+}
