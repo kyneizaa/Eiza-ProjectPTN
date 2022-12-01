@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Eiza
+ */
+public class CekNilai {
+
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n, s, b, a, y = 0;
+
+        System.out.print("Nilai 1= ");
+        n = input.nextInt();
+        System.out.print("Nilai 2= ");
+        s = input.nextInt();
+        System.out.print("Nilai 3= ");
+        b = input.nextInt();
+        System.out.print("Nilai 4= ");
+        a = input.nextInt();
+        System.out.print("Nilai 5= ");
+        y = input.nextInt();
+        System.out.println("");
+        System.out.println("Keterangan :");
+
+        //n1
+        if (n <= 70) {
+            System.out.println("Nilai 1: Kurang");
+        } else if (n <= 80) {
+            System.out.println("Nilai 1: Cukup");
+        } else if (n <= 90) {
+            System.out.println("Nilai 1: Baik");
+        } else if (n <= 100) {
+            System.out.println("Nilai 1: Sangat Baik");
+        }
+
+        //n2
+        if (s <= 70) {
+            System.out.println("Nilai 2: Kurang");
+        } else if (s <= 80) {
+            System.out.println("Nilai 2: Cukup");
+        } else if (s <= 90) {
+            System.out.println("Nilai 2: Baik");
+        } else if (s <= 100) {
+            System.out.println("Nilai 2: Sangat Baik");
+        }
+
+        //n3
+        if (b <= 70) {
+            System.out.println("Nilai 3: Kurang");
+        } else if (b <= 80) {
+            System.out.println("Nilai 3: Cukup");
+        } else if (b <= 90) {
+            System.out.println("Nilai 3: Baik");
+        } else if (b <= 100) {
+            System.out.println("Nilai 3: Sangat Baik");
+        }
+
+        //n4
+        if (a <= 70) {
+            System.out.println("Nilai 4: Kurang");
+        } else if (a <= 80) {
+            System.out.println("Nilai 4: Cukup");
+        } else if (a <= 90) {
+            System.out.println("Nilai 4: Baik");
+        } else if (a <= 100) {
+            System.out.println("Nilai 4: Sangat Baik");
+        }
+
+        //n5
+        if (y <= 70) {
+            System.out.println("Nilai 5: Kurang");
+        } else if (y <= 80) {
+            System.out.println("Nilai 5: Cukup");
+        } else if (y <= 90) {
+            System.out.println("Nilai 5: Baik");
+        } else if (y <= 100) {
+            System.out.println("Nilai 5: Sangat Baik");
+        }
+
+        System.out.println("");
+        System.out.println("Jumlah nilai :");
+        int jumlah = n + s + b + a + y;
+        System.out.println("Jumlah = "+jumlah);
+        if (jumlah <= 300) {
+            System.out.println("Kurang");
+        } else if (jumlah <= 350) {
+            System.out.println("Cukup");
+        } else if (jumlah <= 400) {
+            System.out.println("Baik");
+        } else if (jumlah <= 500) {
+            System.out.println("Sangat Baik");
+        }
+        
+        
+    }
+    
+}
